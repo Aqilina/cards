@@ -125,7 +125,7 @@ $newArray = [];
 $answer = 0;
 
 //1.Padauginti esamo masyvo narius iš 2;
-
+//
 //for ($i= 0; $i < count($array); $i++) {
 //    $answer = $array[$i] * 2;
 //    var_dump($answer);
@@ -158,8 +158,8 @@ $answer = 0;
 //        var_dump($answer);
 //    }
 //}
-//
-////6. Atrinkti tiktai lyginių skaičių masyvą;
+
+//6. Atrinkti tiktai lyginių skaičių masyvą;
 //for ($i= 0; $i<count($array); $i++) {
 //    if ($array[$i]%2 === 0) {
 //        $answer = $array[$i];
@@ -187,32 +187,32 @@ $answer = 0;
 //    $answer = $array[$i] ** $i;
 //    var_dump($answer);
 //}
-
+//
 ////10. Atrinkti tik natūralių skaičių masyvą;
 //natsort($array);
 //for ($i = 0; $i < count($array); $i++) {
 //    var_dump($array[$i]);
 //}
-
+//
 ////11. Suapvalinti visas masyvo reikšmes iki sveikų skaičių;
 //for ($i = 0; $i < count($array); $i++) {
 //    $answer = round($array[$i]);
 //    var_dump($answer);
 //}
-//
+
 ////12. Atrinkti kas antrą elementą;
 //for ($i = 1; $i < count($array); $i+=2) {
 //    $newArray[] = $array[$i];
 //}
 //var_dump($newArray);
-//
-////13. Atrinkti kas penktą elementą;
+
+//13. Atrinkti kas penktą elementą;
 //$arrayX = [];
 //for ($i = 4; $i <count($array); $i+=5) {
 //    $arrayX[] = $array[$i];
 //}
 //var_dump($arrayX);
-//
+
 ////14. Apskaičiuoti visų masyvo elementų sumą;
 //$total = 0;
 //for ($i = 0; $i < count($array); $i++) {
@@ -246,7 +246,7 @@ $answer = 0;
 //for ($i = 0; $i < count($array); $i++) {
 //    var_dump($array[$i]);
 //}
-//
+
 
 
 //-------------------------------------------------------------------------------------------------
@@ -255,80 +255,80 @@ $answer = 0;
 //2.Foreach ciklų pagalbą sugeneruojame naują masyvą, kur bus atvirkštinės reikšmės.
 //3.Rezultatai atspausdinami html, kaip pavyzdyje.
 
-//$arrZeroOne = [
-//    [0, 1, 0],
-//    [0, 1, 1],
-//    [1, 1, 0]
-//];
-//$reversed = [];
-//$newValue = 0;
-//
-//foreach ($arrZeroOne as $line) {
-//    foreach ($line as $integer) {
-//        if ($integer == 0) {
-//            $newValue = 1;
-//        } elseif ($integer == 1) {
-//            $newValue = 0;
-//        }
-//        $reversed[] = $newValue;
-//    }
-//}
-//
-//?>
-<!---->
-<!--<!doctype html>-->
-<!--<html lang="en">-->
-<!--<head>-->
-<!--    <meta charset="UTF-8">-->
-<!--    <meta name="viewport"-->
-<!--          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
-<!--    <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
-<!--    <title>Document</title>-->
-<!--    <style>-->
-<!--        .cont {-->
-<!--            display: flex;-->
-<!--            justify-content: center;-->
-<!--            width: 1000px;-->
-<!--            height: auto;-->
-<!--            margin: auto;-->
-<!--        }-->
-<!--        .container {-->
-<!--            height: 160px;-->
-<!--            width: 160px;-->
-<!--            display: flex;-->
-<!--            flex-wrap: wrap;-->
-<!--            border: 1px solid black;-->
-<!--            margin: 20px;-->
-<!--        }-->
-<!--        .square {-->
-<!--            height: 50px;-->
-<!--            width: 50px;-->
-<!--            border: 1px solid black;-->
-<!--            border-collapse: collapse;-->
-<!--            margin: auto;-->
-<!--        }-->
-<!--    </style>-->
-<!--</head>-->
-<!--<body>-->
-<!---->
-<!--<div class="cont">-->
-<!--    <div class="container">-->
-<!--        --><?php //foreach ($arrZeroOne as $value) : ?>
-<!--            --><?php //foreach ($value as $sth) : ?>
-<!--                <div class="square">--><?php //print $sth?><!--</div>-->
-<!--            --><?php //endforeach; ?>
-<!--        --><?php //endforeach; ?>
-<!--    </div>-->
-<!---->
-<!--    <div class="container">-->
-<!--        --><?php //foreach ($reversed as $value) : ?>
-<!--            <div class="square">--><?php //print $value?><!--</div>-->
-<!--        --><?php //endforeach; ?>
-<!--    </div>-->
-<!--</div>-->
-<!---->
-<!--</body>-->
-<!--</html>-->
+$matrix = [
+    [0, 1, 0],
+    [0, 1, 1],
+    [1, 1, 0]
+];
+$reversed = [];
+$newValue = 0;
+
+foreach ($matrix as $row) {
+    foreach ($row as $integer) {
+        if ($integer === 0) {
+            $newValue = 1;
+        } elseif ($integer === 1) {
+            $newValue = 0;
+        }
+        $reversed[] = $newValue;
+    }
+}
+
+?>
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .cont {
+            display: flex;
+            justify-content: center;
+            width: 1000px;
+            height: auto;
+            margin: auto;
+        }
+        .container {
+            height: 160px;
+            width: 160px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+            margin: 20px;
+        }
+        .square {
+            height: 50px;
+            width: 50px;
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="cont">
+    <div class="container">
+        <?php foreach ($matrix as $value) : ?>
+            <?php foreach ($value as $sth) : ?>
+                <div class="square"><?php print $sth?></div>
+            <?php endforeach; ?>
+        <?php endforeach; ?>
+    </div>
+
+    <div class="container">
+        <?php foreach ($reversed as $value) : ?>
+            <div class="square"><?php print $value?></div>
+        <?php endforeach; ?>
+    </div>
+</div>
+
+</body>
+</html>
 
 <!------------------------------------------------------------------>
 
@@ -379,7 +379,7 @@ for ($x = 0; $x<4; $x++) {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        .container {
+        .containerX {
             display: flex;
             flex-wrap: wrap;
         }
@@ -392,12 +392,13 @@ for ($x = 0; $x<4; $x++) {
         }
         img {
             height: 70px;
+            margin: auto;
         }
     </style>
 </head>
 <body>
 
-<div class="container">
+<div class="containerX">
     <?php for ($i = 0; $i < 56; $i++) : ?>
         <div class="card">
             <div> <?php print $arrValues[$i] ?></div>
@@ -406,28 +407,102 @@ for ($x = 0; $x<4; $x++) {
     <?php endfor; ?>
 </div>
 
+</body>
+</html>
 ---------------------------------------------------------------------------------------------------------------------
 <!--1. Iš sugeneruotos kortų kaladės turi iškristi 5 rand kortos ant stalo.-->
 <!--2. Korta, kuri iškrito ant stalo nebegali iškristi antrą kartą, t.y. turi būti išimta iš kortų kaladės.-->
 <!--3. Atvaizduoti iškritusias kortas ekrane.-->
+<?php
+$deletedSymbols = [];
+$deletedValues = [];
+$keySymbol = array_rand($arrSymbols, 56); //grazina integer
+shuffle($keySymbol);
 
-<div class="container">
+//UNSETINIMAS IS PIRMINIU MASYVU
+foreach ($keySymbol as $key => $value) {
+
+    $deletedSymbols[] = $arrSymbols[$value];
+    $deletedValues[] = $arrValues[$value];
+
+    unset($arrSymbols[$value]);
+    unset($arrValues[$value]);
+
+    if ($key === 4) {
+        break;
+    }
+}
+//
+//var_dump($arrSymbols);
+//var_dump($arrValues);
+//-----------------------------------------------------------------------------------------------------------------------
+
+//<!--    Tikslas - patikrinti, ar visos iškritusios kortos yra vienodos rūšies, pvz. kryžiai?-->
+//<!--    Ekrane, po kortomis atspausdinti rezultatą - taip / ne.-->
+
+$true = '';
+foreach ($deletedSymbols as $key => $symbol) {
+    if ($deletedSymbols[0] === $deletedSymbols[1] && $deletedSymbols[0] === $deletedSymbols[2] && $deletedSymbols[0] === $deletedSymbols[3] &&
+        $deletedSymbols[0] === $deletedSymbols[4] &&
+        $deletedSymbols[1] === $deletedSymbols[2] && $deletedSymbols[1] === $deletedSymbols[3] && $deletedSymbols[1] === $deletedSymbols[4] &&
+        $deletedSymbols[2] === $deletedSymbols[3] && $deletedSymbols[2] === $deletedSymbols[4] &&
+        $deletedSymbols[3] === $deletedSymbols[4]
+    ) {
+        $true = "Kortos yra vienodos rusies";
+    } else {
+        $true = "Kortos nevienodos rusies";
+    }
+}
+
+
+?>
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container2 {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .card {
+            height: 150px;
+            width: 100px;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        img {
+            height: 70px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container2">
     <?php for ($i = 0; $i < 5; $i++) : ?>
 
-        <?php $randSymbol = $arrSymbols[array_rand($arrSymbols)]; ?>
-<!--    --><?php //var_dump(array_rand($arrSymbols)) ?>
-        <?php $randValue = $arrValues[array_rand($arrValues)]; ?>
-
         <div class="card">
-            <div> <?php print $randValue ?></div>
-            <img src="<?php print $randSymbol; ?>" alt="">
+            <div> <?php print $deletedValues[$i] ?></div>
+            <img src="<?php print $deletedSymbols[$i]; ?>" alt="">
         </div>
 
-        <?php unset($arrSymbols[array_rand($arrSymbols)]); ?>
-
     <?php endfor; ?>
-    <?php var_dump($arrSymbols) ?>
+    <div><?php print $true ;?></div>
 </div>
+
+    -----------------------------------------------------------------------------------------------------------------
+
+
+
+
 
 
 
